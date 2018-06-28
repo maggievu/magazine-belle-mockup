@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact | Belle Magazine</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</head>
+
+
+<body id="page">
+
+  <header id="site-header" class="cf">
+
+    <div class="wrapper">
+      <div id="menu-icon">
+        <a href="#"><span class="fas fa-bars"></span><span class="visually-hidden">Menu</span></a>
+      </div>
+
+      <div id="site-logo">
+        <a href="index.html">
+          <object data="images/logo.svg"></object>
+          <h1>Belle</h1>
+        </a>
+      </div>
+
+
+      <nav id="menu-top">
+        <ul>
+          <li><a href="#">beauty</a></li>
+          <li><a href="#">hair</a></li>
+          <li><a href="#">nails</a></li>
+          <li><a href="#">make up</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+
+      </nav>
+
+      <form action="#index" method="get" class="search-form" role="search">
+        <input type="search" class="search-field" title="Enter a keyword...">
+        <button type="submit" class="search-submit">
+          <span class="visually-hidden">Search</span>
+          <span class="fas fa-search fa-sm"></span>
+        </button>
+      </form>
+
+    </div>
+  </header>
+
+  <main id="main-contact" class="wrapper">
+
+    <h2>contact us</h2>
+
+    <form id="contact-form" action="https://formspree.io/maggievu91@gmail.com" method="post" name="contact">
+      <fieldset>
+        <legend><h3>Contact Info</h3></legend>
+
+        <div class="radio-wrapper">
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male"><span></span>Male</label>
+        </div>
+
+        <div class="radio-wrapper">
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female"><span></span>Female</label>
+        </div>
+
+        <div class="label-input-wrapper">
+          <label for="user-name">Name <span class="">*</span></label>
+          <input type="text" name="name" id="user-name" required>
+        </div>
+
+        <div class="label-input-wrapper">
+          <label for="user-email">Email <span class="">*</span></label>
+          <input type="email" name="email" id="user-email" required>
+        </div>
+
+        <div class="label-input-wrapper">
+          <label for="user-phone">Phone Number</label>
+          <input type="tel" name="phone" id="user-phone" placeholder="012-345-6789">
+        </div>
+
+        <div class="label-input-wrapper">
+          <label for="user-postal-code">Postal Code</label>
+          <input type="text" pattern="[A-Za-z][0-9][A-Za-z][0-9][A-Za-z][0-9]" name="postal-code" id="user-postal-code" placeholder="A0A0A0">
+        </div>
+
+      </fieldset>
+
+      <fieldset>
+        <legend><h3>Message</h3></legend>
+
+        <div class="label-input-wrapper">
+          <label for="user-message-subject">Subject</label>
+          <input type="text" name="subject" id="user-message-subject">
+        </div>
+
+        <div class="label-input-wrapper">
+          <label for="user-message">Message <span class="">*</span></label>
+          <textarea name="message" id="user-message" required></textarea>
+        </div>
+
+        <span>* required</span>
+
+      </fieldset>
+
+      <div class="submit-wrapper">
+        <input type="submit" value="Send" class="btn-send">
+        <input type="reset" value="Reset">
+        <input type="hidden" name="_next" value="http://mylinux.langara.bc.ca/~mvu14/magazine/thankyou.html"/>
+      </div>
+
+    </form>
+
+  </main>
+
+  <footer>
+
+    <div class="wrapper cf">
+
+      <div class="about">
+        <h4>About Belle</h4>
+        <p>Belle is a magazine about beauty, hair, nails, make up, do-it-yourself, shopping and other related tips dedicated to every ladies, girls and women.</p>
+        <div class="about-contact">
+          <a href="contact.html">Contact Belle</a>
+          <a href="mailto:contact@bellemagazine.fr">
+            <span class="fas fa-at fa-lg fa-fw"></span>
+            <span class="visually-hidden" title="Email Us">email us</span>
+          </a>
+          <a href="tel:+17788709134">
+            <span class="fas fa-phone fa-lg fa-fw"></span>
+            <span class="visually-hidden" title="Call Us">call us</span>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="browsing">
+        <h4>Explore Belle</h4>
+        <nav>
+          <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="#">beauty</a></li>
+            <li><a href="#">hair</a></li>
+            <li><a href="#">nails</a></li>
+            <li><a href="#">make up</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="subscribe">
+        <h4>Subscribe</h4>
+        <p>Did you like the magazine? Its content? All the tips that you wish you'd known sooner? Sign up and we’ll send you more awesome posts every two weeks! </p>
+        <form action="#" method="post" class="subscribe-form">
+          <input type="email" name="email" class="subscribe-input" placeholder="Email address">
+          <button type="submit" class="subscribe-submit">
+            <span class="visually-hidden">Subscribe</span>
+            <span class="fas fa-check fa-lg"></span>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="foot cf">
+      <div class="wrapper">
+
+        <nav class="faq">
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav class="menu-social">
+          <ul>
+            <li>
+              <a href="#">
+                <span class="fab fa-facebook fa-lg fa-fw"></span>
+                <span class="visually-hidden">facebook</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="fab fa-twitter fa-lg fa-fw"></span>
+                <span class="visually-hidden">twitter</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="fab fa-instagram fa-lg fa-fw"></span>
+                <span class="visually-hidden">instagram</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="fab fa-google-plus fa-lg fa-fw"></span>
+                <span class="visually-hidden">google plus</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="fab fa-pinterest fa-lg fa-fw"></span>
+                <span class="visually-hidden">pinterest</span>
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
